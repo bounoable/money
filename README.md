@@ -11,7 +11,7 @@ package main
 
 import (
     "fmt"
-    "github.com/radical-app/money"
+    "github.com/bounoable/money"
 )
 
 func main() {
@@ -125,8 +125,8 @@ money.EUR(123).String() // "EUR 123"
 ## .Display() beautiful money depending based on locale 
 
 ```go
-import "github.com/radical-app/money/moneyfmt"
-import "github.com/radical-app/money"
+import "github.com/bounoable/money/moneyfmt"
+import "github.com/bounoable/money"
 
 moneyfmt.Display(money.EUR(123400), "ru") // € 1 234
 moneyfmt.Display(money.EUR(123456), "ru") // € 1 234,56

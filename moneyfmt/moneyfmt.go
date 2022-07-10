@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/radical-app/money"
+	"github.com/bounoable/money"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 )

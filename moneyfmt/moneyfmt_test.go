@@ -8,8 +8,8 @@ import (
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 
-	"github.com/radical-app/money"
-	"github.com/radical-app/money/moneyfmt"
+	"github.com/bounoable/money"
+	"github.com/bounoable/money/moneyfmt"
 )
 
 func TestDisplay(t *testing.T) {

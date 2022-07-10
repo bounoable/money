@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	_ "github.com/mattn/go-sqlite3"
-	"github.com/radical-app/money"
+	"github.com/bounoable/money"
 	"github.com/stretchr/testify/assert"
 )
 
