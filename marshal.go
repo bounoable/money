@@ -12,9 +12,11 @@ func (m Money) MarshalJSON() ([]byte, error) {
 }
 
 func (m *Money) UnmarshalJSON(data []byte) error {
+	type Money2 Money
+
 	dto := DTO{}
 	if err := json.Unmarshal(data, &dto); err != nil {
-		return err
+		return json.Unmarshal(data, (*Money2)(m))
 	}
 
 	if dto.Currency == "" {
