@@ -18,8 +18,7 @@ func (m *Money) UnmarshalJSON(data []byte) error {
 		return json.Unmarshal(data, (*Money2)(m))
 	}
 
-	var err error
-	*m, err = dto.ExtractMoney()
+	*m, _ = dto.ExtractMoney()
 
-	return err
+	return nil
 }
