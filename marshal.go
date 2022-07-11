@@ -2,7 +2,6 @@ package money
 
 import (
 	"encoding/json"
-	"errors"
 )
 
 func (m Money) MarshalJSON() ([]byte, error) {
@@ -17,10 +16,6 @@ func (m *Money) UnmarshalJSON(data []byte) error {
 	dto := DTO{}
 	if err := json.Unmarshal(data, &dto); err != nil {
 		return json.Unmarshal(data, (*Money2)(m))
-	}
-
-	if dto.Currency == "" {
-		return errors.New("invalid money object: empty currency")
 	}
 
 	var err error
